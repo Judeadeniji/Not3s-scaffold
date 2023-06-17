@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+.profile{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    position: relative;
+}
+.profile-pic{
+    height: 200px;
+    width: 200px;
+    background-color: #bbb;
+    border-radius: 50%;
+    
+}
+.left-col{
+    margin-top: 5rem !important;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    gap: 5px;
+}
+.left-col ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    left: -19px;
+    position: relative;
+}
+.left-col ul li{
+    border: 1px solid grey;
+    width: 5vw;
+}
+.right-profile{
+    margin-top: 5rem;
+}
+.right-profile button{
+    margin-left: 7rem;
+}
+span, svg {
+    display: inline;
+    text-align: center;
+    color: red;
+    width: 50px !important;
+    height: 21px;
+}
+svg, icon{
+    width: 50em !important;
+    height: 25em;
+}
+
+section{
+    margin-top: 5rem;
+    background: #FFFFFF !important;
+}
+.section-header li{
+    list-style: none;
+}
+.songs-chart td:hover{
+    background: #FFFFFF;
+}
+.main-content {
+    width: 100%;
+    margin-top: 5rem;
+  }
+  
+  .main-content .category {
+    margin: 20px 0;
+    overflow-x: scroll;
+  }
+  
+  .main-content .category .category-title {
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main-content .category .category-title p {
+    font-size: 13px;
+    letter-spacing: .1px;
+    font-weight: 400;
+  }
+  
+  
+  .main-content .category .category-title h2 {
+    margin-left: -1rem;
+  }
+  
+  .main-content .category .category-items {
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    column-gap: 5rem;
+    overflow-x: scroll;
+  }
+  
+  .main-content .category .category-items::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .main-content .category .category-items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+  }
+  
+  .main-content .category .category-items .item .image {
+    background-color: #ffffff47;
+    border-radius: 5px;
+    margin: auto;
+  }
+  
+  .main-content .category .category-items .item p {
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: 900;
+  }
+  .item{
+    border: 1px solid black;
+    width: 150px;
+    height: 125px;
+  }
+ /* Break point */
+  @media screen and (max-width: 767px) {
+    body{
+        background: cyan;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    .profile-pic{
+        text-align: center;
+        background: #000;
+        margin-left: 420%;
+    }
+    .artist-name{
+        margin-top: -10px;
+    }
+    .left-col{
+        margin-left: 41%;
+        margin-top: 20px !important;
+    }
+    .left-col p{
+        margin-left: 15px !important;
+    }
+    .left-col ul li{
+        width: 70px;
+        height: 20px;
+    }
+    .artist-name{
+        width: 40vw;
+        margin-left: -25px;
+    }
+    .left-col ul{
+        margin-left: -28px;
+    }
+    .left-col button{
+        margin-left: 10px;
+    }
+    .tracks{
+        /* text-align: center; */
+        width: 194%;
+        margin-top: -30px;
+    }
+    .right-profile{
+        margin-bottom: 50px !important;
+    }
+    .right-profile button {
+        margin-left: 14.9rem;
+        width: 15vw;
+        margin-top: -30px;
+    }
+    .coming-soon{
+        display: none;
+    }
+    .coming-soon-text{
+        display: none;
+    }
+    .load-more{
+        display: none;
+    }
+    section{
+        margin-top: -25px;
+    }
+    .item{
+        border: 1px solid black;
+        width: 90px;
+        height: 75px;
+    }
+    .main-content .category .category-items {
+        display: grid;
+        grid-template-columns: repeat(50, 1fr);
+        column-gap: 2rem;
+        overflow-x: scroll;
+      }
+      div .category{
+        margin-top: -55px !important;
+      }
+}
+@media screen and (min-width: 768px) and (max-width:1279px){
+    body{
+        background: lemonchiffon;
+    }
+    .left-col{
+        margin-left: 20%;
+        
+    }
+}
